@@ -14,9 +14,9 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Install requirements
+    - name: Install CheckQC and requirements
       run: |
-        pip install -r requirements/dev
+        pip install --upgrade -e . -r requirements/dev
      
     - name: Launch tests
       run: |
